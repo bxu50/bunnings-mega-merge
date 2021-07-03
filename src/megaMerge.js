@@ -9,6 +9,12 @@ export const megaMerge = async (
   const conflictSKU = findConflictedSKUByBarcode(barcodeA, barcodeB);
   const catalogAWithSource = addSourceColoumForCatalog(catalogA, "A");
   const catalogBWithSource = addSourceColoumForCatalog(catalogB, "B");
+  const filteredCatalogB = removeConflictProductBySKU(
+    catalogBWithSource,
+    conflictSKU
+  );
+  const mergedCatalog = catalogAWithSource.concat(filteredCatalogB);
+  return mergedCatalog;
 };
 
 export const findConflictedSKUByBarcode = (barcodeA, barcodeB) =>
@@ -23,3 +29,6 @@ export const findConflictedSKUByBarcode = (barcodeA, barcodeB) =>
 
 export const addSourceColoumForCatalog = (catalog, source) =>
   catalog.map(row => ({ ...row, source: source }));
+
+export const removeConflictProductBySKU = (catalog, SKU) =>
+  SKU.reduce((acc, cur) => acc.filter(row => row.SKU !== cur), catalog);
