@@ -6,8 +6,9 @@ export const megaMerge = async (
   supplierA,
   supplierB
 ) => {
-  const catalogAWithSource = catalogA.map(row => ({ ...row, source: "A" }));
-  const catalogBWithSource = catalogB.map(row => ({ ...row, source: "B" }));
+  const conflictSKU = findConflictedSKUByBarcode(barcodeA, barcodeB);
+  const catalogAWithSource = addSourceColoumForCatalog(catalogA, "A");
+  const catalogBWithSource = addSourceColoumForCatalog(catalogB, "B");
 };
 
 export const findConflictedSKUByBarcode = (barcodeA, barcodeB) =>
@@ -20,3 +21,5 @@ export const findConflictedSKUByBarcode = (barcodeA, barcodeB) =>
     .filter(barcode => barcode !== undefined)
     .filter((barcode, i, ary) => !i || barcode != ary[i - 1]);
 
+export const addSourceColoumForCatalog = (catalog, source) =>
+  catalog.map(row => ({ ...row, source: source }));
