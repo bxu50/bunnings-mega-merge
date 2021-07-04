@@ -2,15 +2,15 @@ export const catalogAWithSource = [
   {
     Description: "Walkers Special Old Whiskey",
     SKU: "647-vyk-317",
-    source: "A"
+    Source: "A"
   },
-  { Description: "Bread - Raisin", SKU: "280-oad-768", source: "A" },
-  { Description: "Tea - Decaf 1 Cup", SKU: "165-rcy-650", source: "A" },
-  { Description: "Cheese - Grana Padano", SKU: "167-eol-949", source: "A" },
+  { Description: "Bread - Raisin", SKU: "280-oad-768", Source: "A" },
+  { Description: "Tea - Decaf 1 Cup", SKU: "165-rcy-650", Source: "A" },
+  { Description: "Cheese - Grana Padano", SKU: "167-eol-949", Source: "A" },
   {
     Description: "Carbonated Water - Lemon Lime",
     SKU: "650-epd-782",
-    source: "A"
+    Source: "A"
   }
 ];
 
@@ -23,20 +23,20 @@ export const mergedSuperset = [
   {
     Description: "Walkers Special Old Whiskey",
     SKU: "647-vyk-317",
-    source: "A"
+    Source: "A"
   },
-  { Description: "Bread - Raisin", SKU: "280-oad-768", source: "A" },
-  { Description: "Tea - Decaf 1 Cup", SKU: "165-rcy-650", source: "A" },
-  { Description: "Cheese - Grana Padano", SKU: "167-eol-949", source: "A" },
+  { Description: "Bread - Raisin", SKU: "280-oad-768", Source: "A" },
+  { Description: "Tea - Decaf 1 Cup", SKU: "165-rcy-650", Source: "A" },
+  { Description: "Cheese - Grana Padano", SKU: "167-eol-949", Source: "A" },
   {
     Description: "Carbonated Water - Lemon Lime",
     SKU: "650-epd-782",
-    source: "A"
+    Source: "A"
   },
-  { Description: "Cheese - Grana Padano", SKU: "999-eol-949", source: "B" },
+  { Description: "Cheese - Grana Padano", SKU: "999-eol-949", Source: "B" },
   {
     Description: "Carbonated Water - Lemon Lime",
     SKU: "999-epd-782",
-    source: "B"
+    Source: "B"
   }
 ];

@@ -27,7 +27,7 @@ export const findConflictedSKUByBarcode = (barcodeA, barcodeB) =>
     .filter((barcode, i, ary) => !i || barcode != ary[i - 1]);
 
 export const addSourceColoumForCatalog = (catalog, source) =>
-  catalog.map(row => ({ ...row, source: source }));
+  catalog.map(row => ({ ...row, Source: source }));
 
 export const removeConflictProductBySKU = (catalog, SKU) =>
   SKU.reduce((acc, cur) => acc.filter(row => row.SKU !== cur), catalog);
