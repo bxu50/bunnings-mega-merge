@@ -27,7 +27,7 @@ const index = async () => {
     ]
   });
   csvWriter.writeRecords(mergedSuperset).then(() => {
-    console.log("merged superset is wrote at output folder");
+    console.log("merged superset result_output.csv is wrote at output folder");
   });
 };
 

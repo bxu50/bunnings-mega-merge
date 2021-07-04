@@ -21,3 +21,4 @@ Run all the test with Jest
 
 
 To run the application please run `npm install` first and then use `npm start` to start the program.
+The merged superset csv will be generated in output folder with result_output.csv name.
