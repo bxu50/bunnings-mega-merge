@@ -13,8 +13,7 @@ export const megaMerge = async (
     catalogBWithSource,
     conflictSKU
   );
-  const mergedCatalog = catalogAWithSource.concat(filteredCatalogB);
-  return mergedCatalog;
+  return catalogAWithSource.concat(filteredCatalogB);
 };
 
 export const findConflictedSKUByBarcode = (barcodeA, barcodeB) =>

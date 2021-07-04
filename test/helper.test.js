@@ -11,7 +11,7 @@ describe('helper', () => {
         "SKU": "280-oad-768"
       }
     ]
-    const catalog = await readCsv(pathname('../test/mock/catalog.csv'));
+    const catalog = await readCsv(pathname('../test/fixtures/catalog.csv'));
     expect(catalog).toEqual(expectedArray)
   })
 })
