@@ -5,9 +5,9 @@ Please make sure you have the latest version of Node.js to run the project prope
 
 ## Assumption
 
-### All conflict products are deleted from company B
-### SKU is unique for each coompany's catalog
-### All input file's name are using same name as sample input
+- All conflict products are deleted from company B
+- SKU is unique for each coompany's catalog
+- All input file's name are using same name as sample input
 
 ## Available Scripts
 
